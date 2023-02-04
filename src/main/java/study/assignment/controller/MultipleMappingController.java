@@ -31,11 +31,13 @@ public class MultipleMappingController {
         String requestUrl = (String)request.getAttribute(HandlerMapping.PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE);
         var retVal = "";
 
-        if(requestUrl.equals("userUpdate")){
+        if(requestUrl.equals("/userUpdate")){
             retVal =  "userUpdate";
         } else {
             retVal =  "userDelete";
         }
+
+        log.info("requested Url : {}", retVal);
 
         return retVal;
     }

@@ -6,5 +6,21 @@
 </head>
 <body>
     INDEX PAGE
+
+    <ul>
+        <li>Request 파라미터</li>
+        <ul>
+            <li><a href="/mapping/users/yhchoi">PathVariable 파라미터</a></li>
+            <li><a href="/mapping/users/yhchoi/orders/100">다중 PathVariable 파라미터</a></li>
+            <li><a href="/mapping/users-v1?username=yhchoi&age=5">Servlet 방식 쿼리 파라미터</a></li>
+            <li><a href="/mapping/users-v2?username=hong&age=10">@RequestParam 사용</a></li>
+            <li><a href="/mapping/users-v3">@RequestParam Default 값</a></li>
+            <li><a href="/mapping/users-v4?username=map&age=15">@RequestParam Map 으로 묶음</a></li>
+            <li><a href="/mapping/users-v5?username=model&age=20">@ModelAttribute 사용</a></li>
+            <li><a href="/mapping/users-v6">HttpEntity 사용 (postman 사용)</a></li>
+            <li><a href="/mapping/users-v7">@RequestBody String Message (postman 사용)</a></li>
+            <li><a href="/mapping/users-v8">@RequestBody Object data (postman 사용)</a></li>
+        </ul>
+    </ul>
 </body>
 </html>
